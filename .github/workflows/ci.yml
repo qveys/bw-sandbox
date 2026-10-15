@@ -10,4 +10,5 @@ jobs:
       - name: test
         run: |
           if [ -f FAIL ]; then echo "FAIL present: $(cat FAIL)"; exit 1; fi
+          if [ -f answer.txt ] && [ "$(cat answer.txt)" != "42" ]; then echo "answer.txt doit valoir 42, vaut: $(cat answer.txt)"; exit 1; fi
           echo ok
