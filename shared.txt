@@ -1,3 +1,3 @@
 ligne 1
-valeur partagee = A
+valeur partagee = B (PR r4a)
 ligne 3
